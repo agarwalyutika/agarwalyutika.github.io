@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  YUTIKA AGARWAL — PORTFOLIO  ·  "AURORA GLASS" THEME
+  ============================================================
+  HOW TO EDIT (no coding background needed):
+   - Your TEXT lives in this file. Change words between the tags.
+   - Add a project link: find the project card and replace
+       href="#"  with your URL, e.g.
+       href="https://github.com/agarwalyutika/your-repo"
+   - Colors / fonts: style.css (top "EASY EDITS" section)
+   - Animations & effects: script.js
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yutika Agarwal — AI/ML Engineer</title>
+  <meta name="description" content="Yutika Agarwal — AI/ML Engineer specializing in Computer Vision, LLMs, and Deep Learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated aurora mesh background -->
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob a1"></span>
+    <span class="aurora__blob a2"></span>
+    <span class="aurora__blob a3"></span>
+    <span class="aurora__blob a4"></span>
+  </div>
+
+  <!-- Soft cursor-follow glow (desktop) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="progress" id="progress"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav glass" id="nav">
+    <img src="assets/profile.png" class="nav__photo" alt="Yutika Agarwal" />
+    <a href="#hero" class="nav__logo">Yutika Agarwal</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark / light">🌙</button>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero section" id="hero">
+    <div class="hero__inner">
+      <span class="chip glass reveal">✦ Available for AI/ML roles</span>
+      <h1 class="hero__name reveal">
+        Yutika <span class="ital">Agarwal</span>
+      </h1>
+      <h2 class="hero__role reveal">
+        <span>I'm a</span>
+        <span class="hero__role-rotate" id="roleRotate" aria-live="polite"></span>
+      </h2>
+      <p class="hero__tagline reveal">
+        Turning ambitious ideas into intelligent software that solves
+        real-world problems.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#projects" class="btn btn--primary magnetic">View My Work</a>
+        <a href="assets/Yutika_Agarwal_Resume.pdf" class="btn btn--glass magnetic" download>Download Résumé</a>
+      </div>
+      <div class="hero__socials reveal">
+        <a href="https://github.com/agarwalyutika" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/yutika-agarwal-75138a215" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:yuti.adm@gmail.com">Email ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="section__head reveal">
+      <span class="section__num">01 — About</span>
+      <h2 class="section__title">A little about me</h2>
+    </div>
+    <div class="about">
+      <div class="about__text glass reveal">
+        <p>
+          I'm an <strong>Artificial Intelligence / Machine Learning</strong> professional
+          with a strong foundation in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>,
+          and <strong>Advanced Data Analytics</strong>, with hands-on experience in
+          <strong>NLP</strong>, <strong>Computer Vision</strong>, and <strong>Neural Networks</strong>.
+        </p>
+        <p>
+          I'm proficient in <strong>Python</strong>, <strong>TensorFlow</strong>, <strong>PyTorch</strong>,
+          <strong>Keras</strong>, and <strong>SQL</strong>, along with modern tooling for ML pipelines and
+          <strong>data visualization</strong>. Having completed my Master of Engineering in Artificial
+          Intelligence, I'm now working as an AI/ML Engineer, building production AI systems that turn
+          research into real-world impact.
+        </p>
+      </div>
+      <div class="about__edu reveal">
+        <h3>Education</h3>
+        <div class="edu glass">
+          <span class="edu__degree">M.Eng — Artificial Intelligence</span>
+          <span class="edu__date">2024 – 2026</span>
+          <span class="edu__school">University of Cincinnati, Ohio, USA</span>
+          <span class="edu__gpa">GPA 3.96 / 4.00</span>
+        </div>
+        <div class="edu glass">
+          <span class="edu__degree">B.Tech — Computer Science &amp; Engineering</span>
+          <span class="edu__date">2020 – 2024</span>
+          <span class="edu__school">The NorthCap University, Gurugram, India</span>
+          <span class="edu__gpa">CGPA 8.28 / 10.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section" id="skills">
+    <div class="section__head reveal">
+      <span class="section__num">02 — Skills</span>
+      <h2 class="section__title">Tools I work with</h2>
+    </div>
+    <div class="skills">
+      <div class="skillcard glass reveal" data-tilt>
+        <h3>AI &amp; Machine Learning</h3>
+        <ul class="tags">
+          <li>Deep Learning</li><li>Neural Networks</li><li>Machine Learning</li>
+          <li>NLP</li><li>Predictive Modeling</li><li>Object Detection</li>
+          <li>OCR</li><li>Image Segmentation</li><li>LLM Fine-Tuning</li><li>RAG</li><li>Agents</li>
+        </ul>
+      </div>
+      <div class="skillcard glass reveal" data-tilt>
+        <h3>Frameworks &amp; Libraries</h3>
+        <ul class="tags">
+          <li>TensorFlow</li><li>PyTorch</li><li>Scikit-learn</li><li>Keras</li>
+          <li>Pandas</li><li>NumPy</li><li>OpenCV</li><li>Ultralytics (YOLO)</li>
+          <li>NetworkX</li><li>Hugging Face</li><li>LangChain</li><li>FAISS</li>
+          <li>Qdrant</li><li>PyMuPDF</li><li>Ollama</li>
+        </ul>
+      </div>
+      <div class="skillcard glass reveal" data-tilt>
+        <h3>Programming &amp; Data Viz</h3>
+        <ul class="tags">
+          <li>Python</li><li>SQL</li><li>Power BI</li><li>Matplotlib</li><li>Seaborn</li>
+        </ul>
+      </div>
+      <div class="skillcard glass reveal" data-tilt>
+        <h3>Tools &amp; Platforms</h3>
+        <ul class="tags">
+          <li>Roboflow</li><li>Google Colab</li><li>Docker</li><li>Streamlit</li><li>AutoCAD</li><li>Git</li><li>GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section" id="experience">
+    <div class="section__head reveal">
+      <span class="section__num">03 — Experience</span>
+      <h2 class="section__title">Where I've worked</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="tl glass reveal">
+        <div class="tl__head">
+          <h3>AI/ML Engineer</h3>
+          <span class="tl__org">Neilsoft · Pune, India</span>
+          <span class="tl__date">May 2026 – Present</span>
+        </div>
+        <ul class="tl__points">
+          <li>Developing an AI-driven <strong>plan-check automation pipeline</strong> that ingests architectural PDF plan sets and answers <strong>building-compliance checklist</strong> questions (<strong>177-rule checklist</strong>) for <strong>AEC</strong> engineering workflows.</li>
+          <li>Built a <strong>PDF triage classifier</strong> categorizing drawing pages as native-text, <strong>OCR-layer</strong>, scanned, or outlined; implemented an <strong>OCR pipeline</strong> (<strong>RapidOCR / Tesseract</strong>) achieving near-complete sheet-number extraction across a <strong>17-document</strong> plan-set corpus, plus vector-path extraction using <strong>PyMuPDF</strong>.</li>
+          <li>Deployed and orchestrated local <strong>LLMs</strong> (<strong>Llama, Gemma</strong> via <strong>Ollama</strong>) and built a <strong>Python agent</strong> to route queries between models for on-premises AI workflows.</li>
+        </ul>
+      </div>
+
+      <div class="tl glass reveal">
+        <div class="tl__head">
+          <h3>AI/ML Engineer</h3>
+          <span class="tl__org">OptifloAI Solutions · Abu Dhabi, UAE</span>
+          <span class="tl__date">Jan 2026 – Apr 2026</span>
+        </div>
+        <ul class="tl__points">
+          <li>Built and fine-tuned <strong>YOLOv11l / YOLOv8l</strong> object detection models for automated <strong>P&amp;ID symbol recognition</strong> (<strong>~88% mAP50</strong>), engineering end-to-end ML pipelines including <strong>synthetic data</strong> generation from <strong>DXF/AutoCAD</strong>, image tiling, <strong>Roboflow</strong> annotation, <strong>OCR</strong> text extraction, graph-based connectivity modeling with <strong>NetworkX</strong>, and GPU-accelerated training on <strong>Google Colab</strong>.</li>
+          <li>Built a custom code-generation model by fine-tuning <strong>Llama 3.1 8B</strong> with <strong>QLoRA</strong>, cutting memory footprint by <strong>75% (16GB → 4GB)</strong> via <strong>4-bit quantization</strong>, and training a <strong>20MB LoRA adapter</strong> on <strong>18.6K samples</strong> that produces syntactically correct <strong>Python</strong> for algorithm implementation, file I/O, and data processing.</li>
+        </ul>
+      </div>
+
+      <div class="tl glass reveal">
+        <div class="tl__head">
+          <h3>AI Researcher Intern</h3>
+          <span class="tl__org">CDAC (Centre for Development of Advanced Computing) · Bangalore, India</span>
+          <span class="tl__date">Jan 2024 – May 2024</span>
+        </div>
+        <ul class="tl__points">
+          <li>Developed and evaluated ML models for <strong>"Uncertainty Quantification"</strong> using <strong>Python, TensorFlow,</strong> and <strong>PyTorch</strong> to enhance model reliability and robustness under adversarial conditions.</li>
+          <li>Applied uncertainty estimation, data preprocessing, feature engineering, and performance analysis to improve the trustworthiness and interpretability of AI systems.</li>
+        </ul>
+      </div>
+
+      <div class="tl glass reveal">
+        <div class="tl__head">
+          <h3>Research Intern</h3>
+          <span class="tl__org">Doon University · Dehradun, India</span>
+          <span class="tl__date">Jun 2022 – Jul 2022</span>
+        </div>
+        <ul class="tl__points">
+          <li>Contributed to <strong>"Designing Hybrid Introspection Enabled VMM-based Security Architecture"</strong> by building and configuring virtual environments, conducting experimental studies, and integrating <strong>virtualization</strong> with security concepts to support architecture design and validation.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <!--
+    TO ADD A PROJECT LINK: replace  href="#"  with your URL,
+    e.g.  href="https://github.com/agarwalyutika/retinal-unet"
+  -->
+  <section class="section" id="projects">
+    <div class="section__head reveal">
+      <span class="section__num">04 — Projects</span>
+      <h2 class="section__title">Things I've built</h2>
+    </div>
+    <div class="projects">
+
+      <article class="card glass reveal" data-tilt data-spotlight>
+        <div class="card__top">
+          <span class="card__icon"><img src="assets/papersage-logo.png" alt="PaperSage logo" /></span>
+          <div class="card__links">
+            <a class="card__link" href="https://huggingface.co/spaces/yutika1708/papersage" target="_blank" rel="noopener">Live ↗</a>
+            <a class="card__link" href="https://github.com/agarwalyutika/paper-sage" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+        <h3>PaperSage — AI Assistant for Research Papers</h3>
+        <p>Deployed a live web app that answers plain-English questions across <strong>200 ML research papers</strong> with clear, source-cited answers and no hallucinations (<strong>Retrieval-Augmented Generation, RAG</strong>). Combined keyword + semantic search with a fine-tuned reranker (<strong>top result 76% → 83%</strong>); also handles uploaded images and user login.</p>
+        <ul class="tags tags--sm"><li>RAG</li><li>LangChain</li><li>Qdrant</li><li>Streamlit</li></ul>
+      </article>
+
+      <article class="card glass reveal" data-tilt data-spotlight>
+        <div class="card__top">
+          <span class="card__icon">🏦</span>
+          <div class="card__links">
+            <a class="card__link" href="assets/vaultiq-dashboard.png" target="_blank" rel="noopener">Dashboard ↗</a>
+            <a class="card__link" href="https://github.com/agarwalyutika/VaultIQ" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+        <h3>VaultIQ — Credit Risk Analytics on 2.2M Loans</h3>
+        <p>Analyzed <strong>2.26M real loans</strong> end-to-end — cleaned raw data in <strong>Python</strong>, stored it in <strong>MySQL</strong>, used <strong>SQL</strong> to study why loans default, and built a <strong>Power BI</strong> dashboard. Found high-risk grades and small-business loans default far more often (<strong>~6% → ~50%</strong>).</p>
+        <ul class="tags tags--sm"><li>Python</li><li>MySQL</li><li>SQL</li><li>Power BI</li></ul>
+      </article>
+
+      <article class="card glass reveal" data-tilt data-spotlight>
+        <div class="card__top">
+          <span class="card__icon">🩺</span>
+          <div class="card__links">
+            <a class="card__link" href="assets/Retinal_Report.pdf" target="_blank" rel="noopener">Report ↗</a>
+            <a class="card__link" href="https://github.com/agarwalyutika/Retinal-Blood-Vessel-Segmentation" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+        <h3>Retinal Blood Vessel Segmentation</h3>
+        <p>Implemented 2- and 3-layer U-Net architectures on 100 retinal images with preprocessing, augmentation, and optimization (Adam, LR scheduling). Best result: <strong>Dice 0.74, IoU 0.58</strong>.</p>
+        <ul class="tags tags--sm"><li>U-Net</li><li>PyTorch</li><li>Segmentation</li></ul>
+      </article>
+
+      <article class="card glass reveal" data-tilt data-spotlight>
+        <div class="card__top">
+          <span class="card__icon">❤️</span>
+          <a class="card__link" href="https://github.com/agarwalyutika/Heart-Disease-Prediction-Boruta-Feature-Selection" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+        <h3>Heart Disease Prediction — Boruta Feature Selection</h3>
+        <p>Built a Boruta-based feature selection model; Random Forest achieved <strong>88% accuracy and 0.8841 ROC AUC</strong>, with comparative analysis vs Lasso, Ridge, and others. Published research.</p>
+        <ul class="tags tags--sm"><li>Boruta</li><li>Random Forest</li><li>Scikit-learn</li></ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section class="section" id="publications">
+    <div class="section__head reveal">
+      <span class="section__num">05 — Publications</span>
+      <h2 class="section__title">Published research</h2>
+    </div>
+    <!--
+      PUBLICATION LINKS: replace  href="#"  with the paper URL
+      (DOI, IEEE Xplore, ResearchGate, or Google Scholar link).
+    -->
+    <div class="pubs">
+      <div class="pub glass reveal">
+        <p><strong>Agarwal, Y.</strong>, Chhikara, R., Rana, S. (2023). Boruta based feature selection model for heart disease prediction.</p>
+        <a class="pub__link" href="assets/Paper_Boruta_Heart_Disease.pdf" target="_blank" rel="noopener">Read paper ↗</a>
+      </div>
+      <div class="pub glass reveal">
+        <p>Nautiyal, S., Saklani, A., Pant, A., <strong>Agarwal, Y.</strong>, Gaur, A., Mishra, P. "VNSecure: An explainable virtual network attack detection framework at VMM-Layer," 2023 Fifteenth Intl. Conf. on Contemporary Computing, pp. 1–12.</p>
+        <a class="pub__link" href="assets/Paper_VNSecure.pdf" target="_blank" rel="noopener">Read paper ↗</a>
+      </div>
+      <div class="pub glass reveal">
+        <p>Bhatt, M., Gaur, A., Badoni, S., <strong>Agarwal, Y.</strong>, Mishra, P. "Advanced malware and their impact on virtualization: hybrid feature extraction using deep memory introspection," 2022 Fourteenth Intl. Conf. on Contemporary Computing, pp. 74–80.</p>
+        <a class="pub__link" href="assets/Paper_Advanced_Malware_Virtualization.pdf" target="_blank" rel="noopener">Read paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="section" id="certifications">
+    <div class="section__head reveal">
+      <span class="section__num">06 — Certifications</span>
+      <h2 class="section__title">Certifications</h2>
+    </div>
+    <!--
+      CERTIFICATION LINKS: replace  href="#"  with the credential URL
+      (Coursera/Google/AWS give a "verify" or "shareable certificate" link),
+      or drop a PDF in assets/ and use  href="assets/your-cert.pdf".
+    -->
+    <ul class="certs">
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_Google_Data_Analytics.pdf" target="_blank" rel="noopener">
+          <span>Google Data Analytics</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_AI_Agent_Developer.pdf" target="_blank" rel="noopener">
+          <span>AI Agent Developer</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_Agentic_AI_Python_GenAI.pdf" target="_blank" rel="noopener">
+          <span>AI Agents and Agentic AI with Python &amp; Generative AI</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_Agentic_AI_Architecture_Python.pdf" target="_blank" rel="noopener">
+          <span>AI Agents and Agentic AI Architecture in Python</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_Google_Data_Analytics_Professional.pdf" target="_blank" rel="noopener">
+          <span>Google Data Analytics Professional Certificate</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_AWS_Cloud_Foundations.pdf" target="_blank" rel="noopener">
+          <span>AWS Academy Graduate — Cloud Foundations — Training Badge</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_AWS_ML_Foundations.pdf" target="_blank" rel="noopener">
+          <span>AWS Academy Graduate — Machine Learning Foundations — Training Badge</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_Prepare_Data_ML_APIs.png" target="_blank" rel="noopener">
+          <span>Prepare Data for ML APIs on Google Cloud — Skill Badge</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_Use_ML_APIs.png" target="_blank" rel="noopener">
+          <span>Use Machine Learning APIs on Google Cloud — Skill Badge</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="cert glass" href="assets/Cert_BigQuery_ML.png" target="_blank" rel="noopener">
+          <span>Engineer Data for Predictive Modeling with BigQuery ML — Skill Badge</span>
+          <span class="cert__go">View ↗</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section--contact" id="contact">
+    <div class="contact glass reveal">
+      <span class="section__num">07 — Contact</span>
+      <h2 class="contact__title">Let's build something <span class="ital">intelligent</span> together.</h2>
+      <p class="contact__sub">
+        I'm open to AI/ML roles and collaborations. The fastest way to reach me is email.
+      </p>
+      <a href="mailto:yuti.adm@gmail.com" class="btn btn--primary btn--lg magnetic">Say Hello →</a>
+
+      <div class="contact__grid">
+        <a href="mailto:yuti.adm@gmail.com">yuti.adm@gmail.com</a>
+        <a href="https://www.linkedin.com/in/yutika-agarwal-75138a215" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/agarwalyutika" target="_blank" rel="noopener">GitHub</a>
+        <!-- Phone numbers — edit or delete as you like -->
+        <a href="tel:+917042835520">+91 70428 35520</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© <span id="year"></span> Yutika Agarwal · Designed &amp; built with care.</p>
+    </footer>
+  </section>
+
+  <!-- Back to top -->
+  <a href="#hero" class="totop glass" id="toTop" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
